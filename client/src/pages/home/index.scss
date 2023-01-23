@@ -1,0 +1,134 @@
+#Home{
+    .bg{
+        width: 100%;
+    }
+    .container{
+        .home{
+            .headText{
+                color: #fff;
+                position: absolute;
+                top: 42%;
+                left: 20%;
+                z-index: 1;
+                .mainText{
+                    font-size: 45px;
+                    width: 40%;
+                    font-family: 'Playfair Display', serif;
+                }
+                .subText{
+                    width: 40%;
+                    line-height: 30px;
+                }
+            }
+
+            // practice section
+            .practice-section{
+                margin-top: 50px;
+                .practice-txt{
+                    text-align: center;
+                    h2{
+                        font-size: 32px;
+                        span{
+                            color: rgb(54, 77, 89);
+                        }
+                    }
+                }
+                .cards{
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    .card{
+                        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+                       width: 30%;
+                       height: 35%;
+                       .cardTitle{
+                        font-size: 18px;
+                        font-weight: 600;
+                       }
+                    }
+                }
+            }
+
+            // solution section
+            .solution-section{
+                margin-top: 150px;
+                display: flex;
+                justify-content: space-between;
+                .img-section{
+                    img{
+                        width: 42%;
+                        padding: 0 15px;
+                    }
+                }
+                .solution-text{
+                    width: 35%;
+                    .solution-main-txt{
+                        margin-top: 50px;
+                        font-size: 28px;
+                        font-family: 'Playfair Display', serif;
+                        color: rgb(54, 77, 89);
+                        margin-bottom: 20px;
+                    }
+                    .solution-sub{
+                        line-height: 28px;
+                        color: rgb(54, 77, 89);
+                        margin-bottom: 50px;
+                    }
+                    .solutionBtn{
+                        padding: 17px 21px;
+                        font-size: 15px;
+                        border: none;
+                        background-color: #FEE2B3;
+                        cursor: pointer;
+                        transition: all .3s;
+                        &:hover{
+                            background-color: #fcd593;
+                        }
+                    }
+                }
+            }
+
+            // happy-customers
+            .happy-customers{
+                margin: 50px 0;
+            }
+
+ 
+
+            // last section 
+            .lastSection{
+                margin: 100px 0;
+                display: flex;
+                justify-content: center;
+                column-gap: 19px;
+                .legal-solution{
+                    .lastSectionMainTxt{
+                        font-size: 28px;
+                        width: 70%;
+                        color: rgb(54, 77, 89);
+                        margin-bottom: 20px;
+                    }
+                    .restTxt{
+                        width: 70%;
+                        line-height: 28px;
+                        margin-bottom: 30px;
+                    }
+                    .check{
+                        p{
+                            padding: 10px 0;
+                            i{
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                }
+                .accor{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

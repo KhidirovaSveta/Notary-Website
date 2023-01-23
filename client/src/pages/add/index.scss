@@ -1,0 +1,27 @@
+#Form{
+    text-align: center;
+    .addCustomer{
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+        .input{
+          padding: 15px 20px;
+          .inputVal{
+            padding: 14px 10px;
+            width: 30%;
+            border: none;
+            box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+          }
+        }
+        .subBtn{
+            margin-top: 15px;
+            margin-bottom: 60px;
+            padding: 7px 19px;
+            width: 30%;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+            background-color: #FEE2B3;
+        }
+
+}

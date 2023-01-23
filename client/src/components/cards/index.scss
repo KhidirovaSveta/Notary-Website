@@ -1,0 +1,48 @@
+#Cards{
+    margin: 100px 0;
+    .happyCus{
+       text-align: center;
+       color: rgb(54, 77, 89);
+       margin: 40px 0;
+    }
+    .searchInp{
+        text-align: center;
+        margin-bottom: 40px;
+        input{
+         width: 35%;
+         padding: 8px 7px;
+         border: none;
+         box-shadow: 1px 1px 9px #6464646c;
+        }
+    }
+    .container{
+      .cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 35px;
+        column-gap: 15px;
+        .card{
+            .top{
+                img{
+                    width: 20%;
+                    border-radius: 50%;
+                }
+                column-gap: 10px;
+                display: flex;
+            }
+            .happyP{
+                margin-top: 15px;
+                font-size: 19px;
+                color: rgb(54, 77, 89);
+            }
+            .deleteBtn{
+                margin: 14px 0;
+                padding: 7px 17px;
+                border: none;
+                background-color: #FEE2B3;
+            }
+        }
+      }
+    }
+}

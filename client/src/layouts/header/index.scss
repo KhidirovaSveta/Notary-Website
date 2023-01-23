@@ -1,0 +1,26 @@
+#Header{
+    background-color: #FEE2B3;
+    .container{
+       .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navBar{
+            padding: 40px 0;
+            ul{
+                display: flex;
+                list-style: none;
+                column-gap: 35px;
+                font-size: 16px;
+                li{
+                    a{
+                        font-size: 16px;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+       }
+    }
+}
