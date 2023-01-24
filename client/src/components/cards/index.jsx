@@ -26,11 +26,19 @@ const Cards = () => {
       }
     )}
 
+     
+    const handleSort = () => {
+      let sortSort = customers.sort((a, b) => a.name>b.name? 1:-1)
+      setCustomers([...sortSort])
+    }
+
+
   return (
     <div id='Cards'>
             <h1 className='happyCus'>Happy Customers</h1>
             <div className="searchInp">
             <input  type="text"  onChange={(e) => handleSearch(e.target.value)} placeholder="Search Customers"/>
+            <button onClick={() => handleSort()} className="sortByName"> Sort </button>
             </div>
         <div className="container">
             <div className="cards"> 
@@ -38,26 +46,25 @@ const Cards = () => {
               return(
         
                   <div className="card">
-                    {/* <Link to={`/details/${cus._id}`}> */}
                   <Card
                          style={{
-                          width: 380,
-                          height: 320,
-                          boxShadow: "0 1px 17px #0003",
-                         }}>
+                           width: 380,
+                           height: 320,
+                           boxShadow: "0 1px 17px #0003",
+                          }}>
                           <div className="top">
-                            {console.log(cus.imgUlr)}
-                          <img src={cus?.imgUlr} alt=""  className='happyImg'/>
+                          <img src={cus?.imgUrl} alt=""  className='happyImg'/>
                           <div className="position">
                           <p className='cardTitle'>{cus.name}</p>
                           <p>{cus.position}</p>
                           </div>
                             </div>
+                           <Link to={`/home/${cus._id}`}>
                         <p className='happyP'>"{cus.description}"</p>
+                          </Link>
                         <button onClick={() => handleDelete(cus._id)} className="deleteBtn"> Delete </button>
-                </Card>                 
+                  </Card>                 
                     
-                    {/* </Link> */}
                 </div>
                 )
               })}

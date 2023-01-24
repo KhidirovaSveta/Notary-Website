@@ -1,0 +1,37 @@
+#Details {
+  margin: 150px 0;
+  .container {
+    .details {
+      .backhomeBtn {
+        margin-bottom: 40px;
+        padding: 7px 15px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 3px solid #fee2b3;
+      }
+      .detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .customersInfo {
+          .details-main {
+            font-size: 33px;
+            margin-bottom: 7px;
+            font-family: "Playfair Display", serif;
+          }
+          .details-parag {
+            margin-bottom: 20px;
+          }
+          .detailsBtn {
+            margin-top: 30px;
+            padding: 7px 19px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            background-color: #fee2b3;
+          }
+        }
+      }
+    }
+  }
+}
